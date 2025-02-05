@@ -1,6 +1,6 @@
 # resolve-ref.js
 
-- [Boilerplate](src/resolve-ref.js)
+- [Boilerplate](src/script.js)
 - [Sample Page](sample/sample.html)
 
 ## Alternate Views
