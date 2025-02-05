@@ -1,4 +1,4 @@
-# resolve-ref.js
+# resolve-ref
 
 - [Boilerplate](src/script.js)
 - [Sample Page](sample/sample.html)
