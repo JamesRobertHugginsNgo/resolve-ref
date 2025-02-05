@@ -1,0 +1,12 @@
+{
+  "name": "resolve-ref",
+  "version": "1.0.0",
+  "description": "## Alternate Views",
+  "main": "src/resolve-ref.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
