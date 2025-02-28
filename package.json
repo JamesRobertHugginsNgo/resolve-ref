@@ -1,12 +1,28 @@
 {
   "name": "resolve-ref",
   "version": "1.0.2",
-  "description": "## Alternate Views",
-  "main": "src/script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "",
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "author": {
+    "name": "James Robert Huggins Ngo",
+    "email": "jamesroberthugginsngo@gmail.com",
+    "url": "https://jamesroberthugginsngo.github.io"
+  },
+  "type": "module",
+  "main": "./src/resolve-ref.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/resolve-ref.d.ts",
+      "default": "./dist/resolve-ref.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && npx prettier --write ./dist/*.[jt]s"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.1",
+    "typescript": "^5.7.3"
+  }
 }

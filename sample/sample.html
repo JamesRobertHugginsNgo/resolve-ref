@@ -4,12 +4,92 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>resolve-ref - Sample</title>
+	<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-	<p>Please review the console output.</p>
-	<script type="module" src="script.js"></script>
+	<main class="page-width">
+		<h1>resolve-ref - Sample</h1>
+
+		<p>The following content is dynamically generated which can be viewed in the web page's source code.</p>
+	</main>
+
+	<script type="module">
+		import resolveRef from '../dist/resolve-ref.js';
+		import CodeDisplay from './code-display.js';
+
+		const codeDisplay = new CodeDisplay(document.querySelector('main'));
+
+		const refDictionary = codeDisplay.insert(
+			'Ref Dictionary',
+			'Define <strong>refDictionary</strong> value.',
+			() => {
+				return {
+					keyA: true,
+					keyB: 123,
+					keyC: 'string',
+					keyD: { ref: 'keyA' },
+					keyE: { ref: 'keyD' },
+					keyF: { ref: 'keyE' }
+				};
+			}
+		);
+
+		codeDisplay.insert(
+			'Key A',
+			'Get "keyA" key value.',
+			(refDictionary) => {
+				return resolveRef(refDictionary, 'keyA');
+			},
+			refDictionary
+		);
+
+		codeDisplay.insert(
+			'Key B',
+			'Get "keyB" key value.',
+			(refDictionary) => {
+				return resolveRef(refDictionary, 'keyB');
+			},
+			refDictionary
+		);
+
+		codeDisplay.insert(
+			'Key C',
+			'Get "keyC" key value.',
+			(refDictionary) => {
+				return resolveRef(refDictionary, 'keyC');
+			},
+			refDictionary
+		);
+
+		codeDisplay.insert(
+			'Key D',
+			'Get "keyD" key value.',
+			(refDictionary) => {
+				return resolveRef(refDictionary, 'keyD');
+			},
+			refDictionary
+		);
+
+		codeDisplay.insert(
+			'Key E',
+			'Get "keyE" key value.',
+			(refDictionary) => {
+				return resolveRef(refDictionary, 'keyE');
+			},
+			refDictionary
+		);
+
+		codeDisplay.insert(
+			'Key F',
+			'Get "keyF" key value.',
+			(refDictionary) => {
+				return resolveRef(refDictionary, 'keyF');
+			},
+			refDictionary
+		);
+	</script>
 </body>
 
 </html>
