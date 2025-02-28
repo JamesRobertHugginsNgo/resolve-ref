@@ -1,5 +1,3 @@
-/* BOILERPLATE */
-
 export default function resolveRef(refDictionary: { [key: string]: any }, key: string, refKey: string = 'ref'): string {
 	if (
 		typeof refDictionary[key] === 'object'
