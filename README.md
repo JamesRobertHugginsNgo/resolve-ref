@@ -2,7 +2,7 @@
 
 [![Open in Github](https://img.shields.io/badge/Open_in_GitHub-6e5494)](https://github.com/JamesRobertHugginsNgo/resolve-ref)
 [![Open in Github Page](https://img.shields.io/badge/Open_in_GitHub%20Page-4078c0)](https://jamesroberthugginsngo.github.io/resolve-ref/)
-[![Open Tag](https://img.shields.io/badge/Open_Tag-2.0.0-6cc644)](https://github.com/JamesRobertHugginsNgo/resolve-ref/tree/2.0.0)
+[![Open Tag](https://img.shields.io/badge/Open_Tag-2.1.0-6cc644)](https://github.com/JamesRobertHugginsNgo/resolve-ref/tree/2.1.0)
 
 TypeScript/JavaScript function for getting an object key that points to a value by following one or more references.
 
