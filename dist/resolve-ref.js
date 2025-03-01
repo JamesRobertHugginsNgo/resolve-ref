@@ -1,4 +1,3 @@
-/* BOILERPLATE */
 export default function resolveRef(refDictionary, key, refKey = "ref") {
 	if (
 		typeof refDictionary[key] === "object" &&
